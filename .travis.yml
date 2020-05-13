@@ -21,6 +21,7 @@ after_success:
   - docker push tomotoyinbo/multi-server
   - docker push tomotoyinbo/multi-worker
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: us-east-1
   app: multi-docker
